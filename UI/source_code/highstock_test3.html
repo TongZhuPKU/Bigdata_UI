@@ -1,0 +1,54 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--<link rel="icon" href="https://jscdn.com.cn/highcharts/images/favicon.ico">-->
+    <link href="styles/highstock_test3.css" rel="stylesheet">
+    <script src="../Highstock/code/highstock.js"></script>
+    <script src="../jQuery/jquery-1.8.3.min.js"></script>
+    <script src="..Highcharts/code/modules/exporting.js"></script>
+    <script charset="gb2312" language="javascript" src="scripts/main_test3.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /* css 代码  */
+    </style>
+</head>
+
+<body>
+    <h1>当前股票代码</h1>
+    <h2>当前行业代码</h2>
+
+    <p>我们致力于实现对市场风险的精准把控。</p>
+    <h3>开发版</h3>
+    <p>本站点旨在实现市场情绪的实时监控。</p>
+    <!--
+    <ul>
+        <li> 分时数据 </li>
+        <li> 五日数据 </li>
+        <li> 日线  </li>
+    </ul>
+    -->
+
+    <select id="stock code">
+        <option value="10">002475</option>
+        <option value="20">000001</option>
+        <option value="30">000002</option>
+        <option value="40">600593</option>
+    </select>
+    <button onclick="test()" id="code">切换股票代码</button>
+    <!-- <button id="code">切换股票代码</button>-->
+
+    <select id="stock industry">
+        <option value="10">精密制造</option>
+        <option value="20">白色家电</option>
+        <option value="30">白酒消费</option>
+        <option value="40">有色金属</option>
+    </select>
+    <!-- <button onClikc="test()" id="industry">切换行业板块</button> -->
+    <button id="industry">切换行业板块</button>
+
+    <div id="container" style="min-width:400px;height:400px"></div>
+    <script charset="gb2312" language="javascript" src="scripts/highstock_test3.js" defer></script>
+</body>
+
+</html>
